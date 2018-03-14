@@ -82,7 +82,7 @@ public class MapDemo {
 
     public static void buffer() {
         Observable.just(1, 2, 3, 4, 5)
-                .buffer(3, 1)
+                .buffer(3, 3)
                 .subscribe(new Observer<List<Integer>>() {
                     @Override
                     public void onSubscribe(Disposable d) {
@@ -94,7 +94,7 @@ public class MapDemo {
                         Log.e("Rxjava", " 缓存区里的事件数量 = " + value.size());
                         for (Integer i :
                                 value) {
-                            Log.e("Rxjava", "事件=" + value);
+                            Log.e("Rxjava", "事件=" + i);
                         }
                     }
 

@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import example.com.rxjavademo.map.MapDemo;
+import example.com.rxjavademo.concat.ConcatDemo;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -30,8 +30,12 @@ public class MainActivity extends AppCompatActivity {
 
 //        CreateDemo.fromIterable();
 
-        MapDemo.flatMap();
+//        MapDemo.flatMap();
+
+        ConcatDemo.zip();
+
     }
+
 
     private void chainCall() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
