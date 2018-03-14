@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import example.com.rxjavademo.map.MapDemo;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
@@ -21,10 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
         // 一步一步调用
 //        stepCall();
-
         // 链式调用
-        chainCall();
+//        chainCall();
+//        CreateDemo.create();
+//        CreateDemo.just();
+//        CreateDemo.fromArray();
 
+//        CreateDemo.fromIterable();
+
+        MapDemo.flatMap();
     }
 
     private void chainCall() {
